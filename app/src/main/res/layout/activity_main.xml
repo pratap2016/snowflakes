@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ListView
+            android:id="@+id/lv_contact_details"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".9"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:choiceMode="multipleChoice"
+            android:hapticFeedbackEnabled="true"
+            android:padding="@dimen/dp10"></ListView>
+
+        <Button
+            android:id="@+id/bt_next"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".1"
+            android:background="@android:color/holo_blue_dark"
+            android:padding="@dimen/dp2"
+            android:text="@string/next"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dp20"
+            android:textStyle="bold|normal" />
+    </LinearLayout>
+
+</LinearLayout>
